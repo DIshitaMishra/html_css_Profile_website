@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: #ffffff;
+    
+    
+}
+
+.main{
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(code.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  opacity: 2;
+}
+
+.nav{
+    width: 1470px;
+    height: 75px;
+    margin: auto;
+    background-color: black;
+    border: 2px;
+    border-color: #ffffff;
+    border-radius: 2px;
+    
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    margin-left: 60px;
+}
+
+.logo{
+    
+    color: rgb(255, 121, 18);
+    font: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 0px;
+    float: left;
+    padding-top:10px ;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+   
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 253, 253);
+    
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 20px;
+    font-size: 14px;
+    
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+   
+    
+
+}
+ul li a:hover{
+    color:   rgb(255, 121, 18) ;
+    cursor: pointer;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 450px;
+   
+
+}
+
+.srch{
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 18px;
+    width: 220px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid  rgb(255, 121, 18);
+    margin-top: 10px;
+    color: #ffffff;
+    border-right: none;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:  rgb(255, 121, 18);
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background:rgb(255, 121, 18) ;
+    border: 2px solid rgb(255, 121, 18);
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #ffffff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.slider{
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.images{
+    display: flex;
+    width: 500px;
+}
+.images img{
+    height: 400px;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid white 3px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    margin: 3px;
+}
+.dots label:hover{
+    background: #ffffff;
+}
+#img1:checked ~ .m1 {
+    margin-right: -30%;
+}
+#img2:checked ~ .m2 {
+    margin-left: -96.5%;
+    margin-right: 20%;
+    
+}
+#img3:checked ~ .m3 {
+    margin-left: -151%;
+    margin-right: 20%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+.form{
+    width: 350px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.838)50%, rgba(0, 0, 0, 0.827)50%);
+    position: absolute; 
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 250px;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color:  rgb(255, 121, 18);
+    font-size: 22px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+    margin-left: 40px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid rgb(255, 121, 18);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #ffffff;
+    font-family: Arial;
+}
